@@ -19,4 +19,10 @@ def write_todos(todos_list, File_Path = FP):
     with open(File_Path, 'w') as f:
         f.writelines(todos_list)
 
-
+if __name__ == '__main__':
+    x = get_todos()
+    print(x)
+    x.append('three'+'\n')
+    write_todos(x)
+    x = get_todos()
+    print(x)
